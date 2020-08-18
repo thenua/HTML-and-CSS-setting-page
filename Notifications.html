@@ -1,0 +1,98 @@
+<html>
+<title>FriendZone
+</title>
+<head>
+<link type="text/css" rel="stylesheet" href="Setting.css" />
+</head>
+<body>
+<div class="header1">
+<div id="img3" class="header1"><img src="6.white.png"/></div>
+<div id="searcharea" class="header1"><input placeholder="search here..." type="text" id="searchbox"/></div>
+<div id="profilearea" class="header1"><a href="profile.html"><img src="h.png" width="45px"/></a></div>
+<div id="profilearea1" class="header1"><a1 href="profile.html">Profile</a1></div>
+<div id="profilearea3" class="header1">|</div>
+<div id="profilearea4" class="header1">Home</div>
+<div id="findf" class="header1"><img src="b.jpg" width="45px"/></div>
+<div id="message" class="header1"><img src="a.jpg" width="45px"/></div>
+<div id="notification" class="header1"><img src="e.jpg"width="45px"/></div>
+<div id="profilearea2" class="header1">|</div>
+<div id="setting" class="header1"><img src="f.png" width="45px"/></div>
+<div id="logout" class="header1"><a href="logout.html"><img src="c.jpg" width="45px"/></a></div>
+</div>
+
+
+<div class="bodyn">
+
+
+
+<div id="side1" class="bodyn"><img src="f.png"width="60px"/>Setting</div>
+
+
+
+<div id="side2" class="bodyn">change settings</div>
+
+
+<ul>
+
+
+
+<div id="side3" class="bodyn" li class="selected"><a href="Account.html">Account</a></li></div>
+
+
+
+<div id="side4" class="bodyn" li><a href="Privacy.html">Privacy</a></li></div>
+
+
+
+<div id="side5" class="bodyn" li><a href="General.html">General</a></li></div>
+
+
+
+<div id="side6" class="bodyn"li><a href="Notifications.html">Notifications</a></li>
+<div class="post04">
+<h1><center><i>Notifications Setting</i></center></h1>
+<p id="p4"><b><i>How would you like to get your Notifications:</i></b></p>
+<form action="script url" method="POST">
+<script>
+function number()
+{
+var a=prompt("Enter your 10 digit Phone Number");
+confirm("Click Ok to confirm your phone number: "+a);
+if(isNaN(a) || a.length > 10 || a.length < 10)
+{
+alert("Please check the number.");
+}
+else
+{
+alert("Your Notifications setting have changed to Phone Number");
+}
+}
+</script>
+<pre id="d1"><b>   Through Phone Number     </b><input type="radio" name="java" value="number" onclick="number()"></pre>
+<script>
+function mail()
+{
+var a=prompt("Enter your E-Mail ID");
+confirm("Click Ok to confirm your ID: "+a);
+var atPos= parseInt(a.indexOf('@'));
+var dotPos = parseInt(a.lastIndexOf('.'));
+if( atPos<1 || (dotPos-atPos)<2)
+{
+alert("Enter correct email.");
+}
+else
+{
+alert("Your notifications setting have changed to E-mail ID");
+}
+}
+</script>
+<pre id="d1"><b>   Through E-Mail ID        </b><input type="radio" name="java" value="e-mail" onclick="mail()"></pre>
+</form>
+</div>
+</div>
+
+<div id="side7" class="bodyn"li><a href="Chat.html">Chat</a></li>
+</div>
+
+</body>
+</html>
